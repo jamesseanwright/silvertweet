@@ -4,8 +4,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
-    Loaded="BtnSearch_Click">
-
+    DataContext="MainPageViewModel">
+    
+    
     <Grid Background="#FF5C7590" ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
@@ -25,10 +26,11 @@
             
             <TextBox Name="TxtSearch" Grid.Column="1" FontSize="14" Text="Twitter" />
             
-            <Button Name="BtnSearch" Grid.Column="2" Content="Search" Click="BtnSearch_Click" />
+            <Button Name="BtnSearch" Grid.Column="2" Content="Search" Command="{Binding Path=SearchCommand}" 
+                    CommandParameter="{Binding Text, ElementName=TxtSearch, Mode=OneWay}" />
         </Grid>
 
-        <ListBox Name="TweetList" ItemsSource="{Binding}" Grid.Row="1" Margin="5">
+        <ListBox Name="TweetList" ItemsSource="{Binding Path=TweetList}" Grid.Row="1" Margin="5">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Width="Auto">
