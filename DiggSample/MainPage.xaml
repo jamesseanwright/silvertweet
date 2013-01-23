@@ -3,7 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    mc:Ignorable="d" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    Loaded="BtnSearch_Click">
 
     <Grid Background="#FF5C7590" ShowGridLines="True">
         <Grid.RowDefinitions>
@@ -22,11 +23,23 @@
                 <TextBlock Text="Search Twitter" Foreground="#FF14517B" Margin="10, 3, 0, 0" />
             </Border>
             
-            <TextBox Name="TxtSearch" Grid.Column="1" FontSize="14" Text="Topic..." />
+            <TextBox Name="TxtSearch" Grid.Column="1" FontSize="14" Text="Twitter" />
             
             <Button Name="BtnSearch" Grid.Column="2" Content="Search" Click="BtnSearch_Click" />
         </Grid>
-        <sdk:DataGrid x:Name="TweetList" Grid.Row="1" Margin="5">
-        </sdk:DataGrid>
+
+        <ListBox Name="TweetList" ItemsSource="{Binding}" Grid.Row="1" Margin="5">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="Auto">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding ProfileImage}" Margin="5" />
+                            <TextBlock Text="{Binding User}" FontSize="28" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding Text}" FontSize="14" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>

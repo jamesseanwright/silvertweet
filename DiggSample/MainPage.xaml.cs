@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Json;
 using System.Runtime.Serialization;
@@ -22,6 +23,7 @@ namespace SilverTweet
         public MainPage()
         {
             InitializeComponent();
+            DataContext = new MainPageViewModel(); 
         }
 
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
@@ -52,12 +54,12 @@ namespace SilverTweet
                         ProfileImage = (string)tweet["profile_image_url"],
                         Text = (string)tweet["text"]
                     };
-           
+
+            var tweetObs = new ObservableCollection<Tweet>(tweets);
 
             TweetList.SelectedIndex = -1;
-            TweetList.ItemsSource = tweets.ToList();
-
-            var obs = new ObservableCollection<Tweet>();
+            this.DataContext = tweetObs;
+            
         }
     }
 }
