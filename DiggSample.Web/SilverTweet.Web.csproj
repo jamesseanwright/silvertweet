@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DiggSample.Web</RootNamespace>
-    <AssemblyName>DiggSample.Web</AssemblyName>
+    <RootNamespace>SilverTweet.Web</RootNamespace>
+    <AssemblyName>SilverTweet.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <SilverlightApplicationList>{654FCCFF-AD42-40AD-8CD2-FE1B54A9FE8A}|..\DiggSample\DiggSample.csproj|ClientBin|False</SilverlightApplicationList>

@@ -1,5 +1,3 @@
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\DiggSample.dll
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\DiggSample.pdb
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\AppManifest.xaml
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\DiggSample.xap
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\DiggSampleTestPage.html
@@ -154,9 +152,6 @@ C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\B
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\App.g.i.cs
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\MainPage.g.i.cs
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\DiggSample.g.resources
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\DiggSample.dll
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\DiggSample.pdb
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\XapCacheFile.xml
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\System.Runtime.Serialization.Json.dll
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\System.Runtime.Serialization.Json.xml
@@ -169,3 +164,8 @@ C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\B
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\ru\System.Runtime.Serialization.Json.resources.dll
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\zh-Hans\System.Runtime.Serialization.Json.resources.dll
 C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\zh-Hant\System.Runtime.Serialization.Json.resources.dll
+C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\SilverTweet.dll
+C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\Bin\Debug\SilverTweet.pdb
+C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\SilverTweet.g.resources
+C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\SilverTweet.dll
+C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample\obj\Debug\SilverTweet.pdb

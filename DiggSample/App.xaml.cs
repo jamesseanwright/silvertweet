@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
-namespace DiggSample
+namespace SilverTweet
 {
     public partial class App : Application
     {

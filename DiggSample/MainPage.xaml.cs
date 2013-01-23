@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Json;
 using System.Runtime.Serialization;
@@ -14,7 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
-namespace DiggSample
+namespace SilverTweet
 {
     public partial class MainPage : UserControl
     {
@@ -35,32 +36,28 @@ namespace DiggSample
         {
             if (e.Error == null)
             {
-                DisplayTweets(StringToStream(e.Result));
+                DisplayTweets(e.Result);
             }
         }
 
-        private MemoryStream StringToStream(string toConvert)
+        private void DisplayTweets(string data)
         {
-            System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
-            return new MemoryStream(encoding.GetBytes(toConvert));
-        }
+            JsonObject json = (JsonObject) JsonValue.Parse(data);
+            JsonArray results = (JsonArray) json["results"];
 
-        private void DisplayTweets(MemoryStream data)
-        {
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(APIResponse));
-            APIResponse response = (APIResponse) serializer.ReadObject(data);
-
-            var tweets = from tweet in response.results
-                          select new Tweet
-                          {
-                              User = (string) tweet["from_user_name"],
-                              ProfileImage = (string) tweet["profile_image_url"],
-                              Text = (string) tweet["text"],
-                              CreatedAt = new DateTime()
-                          };
+            var tweets = from tweet in results
+                    select new Tweet
+                    {
+                        User = (string)tweet["from_user"],
+                        ProfileImage = (string)tweet["profile_image_url"],
+                        Text = (string)tweet["text"]
+                    };
+           
 
             TweetList.SelectedIndex = -1;
-            TweetList.ItemsSource = tweets;
+            TweetList.ItemsSource = tweets.ToList();
+
+            var obs = new ObservableCollection<Tweet>();
         }
     }
 }
