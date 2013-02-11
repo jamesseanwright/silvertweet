@@ -1,5 +1,0 @@
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample.Web\bin\DiggSample.Web.dll
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample.Web\bin\DiggSample.Web.pdb
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample.Web\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample.Web\obj\Debug\DiggSample.Web.dll
-C:\Users\Administrator.WIN7\Documents\SilverlightProject\DiggSample\DiggSample.Web\obj\Debug\DiggSample.Web.pdb
