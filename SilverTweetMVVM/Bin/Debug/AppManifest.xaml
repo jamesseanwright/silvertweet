@@ -5,6 +5,9 @@
       <OutOfBrowserSettings.WindowSettings>
         <WindowSettings Title="SilverTweet" Height="800" Width="480" />
       </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.SecuritySettings>
+        <SecuritySettings ElevatedPermissions="Required" />
+      </OutOfBrowserSettings.SecuritySettings>
       <OutOfBrowserSettings.Icons />
     </OutOfBrowserSettings>
   </Deployment.OutOfBrowserSettings>

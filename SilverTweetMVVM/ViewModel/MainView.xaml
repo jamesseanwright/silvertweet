@@ -58,7 +58,6 @@
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-            <TextBlock Text="Loading..." Visibility="{Binding Loading, Converter={StaticResource booleanToVisibilityConverter}}" FontSize="36" />
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Loaded">
                     <cmd:EventToCommand Command="{Binding GetTweetsCommand}" CommandParameter="Twitter" />
