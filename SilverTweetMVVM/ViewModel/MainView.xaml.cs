@@ -16,15 +16,16 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using GalaSoft.MvvmLight.Messaging;
+using SilverTweetMVVM.ViewModel;
 
 namespace SilverTweetMVVM
 {
-    public partial class MainPage : UserControl
+    public partial class MainView : UserControl
     {
-        public MainPage()
+        public MainView()
         {
             InitializeComponent();
-            DataContext = new MainPageViewModel();
+            DataContext = new MainViewModel();
             Messenger.Default.Register<string>(this, (animation) => onReceiveMessage(animation));
         }
 

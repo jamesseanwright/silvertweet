@@ -16,10 +16,11 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Threading.Tasks;
+using SilverTweetMVVM.Model;
 
-namespace SilverTweetMVVM
+namespace SilverTweetMVVM.DataService
 {
-    public class TwitterAPI
+    public class TwitterDataService
     {
         public async Task<ObservableCollection<Tweet>> Search(string query)
         {

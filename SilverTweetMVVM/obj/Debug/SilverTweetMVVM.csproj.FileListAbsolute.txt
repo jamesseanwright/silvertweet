@@ -44,8 +44,8 @@ C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVV
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\zh-Hant\System.Runtime.Serialization.Json.resources.dll
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\App.g.i.cs
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\MainPage.g.i.cs
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\SilverTweetMVVM.g.resources
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\SilverTweetMVVM.dll
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\SilverTweetMVVM.pdb
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\XapCacheFile.xml
+C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\ViewModel\MainView.g.i.cs

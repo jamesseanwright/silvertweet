@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="SilverTweetMVVM.MainPage"
+﻿<UserControl x:Class="SilverTweetMVVM.MainView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -37,7 +37,7 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" CornerRadius="10" Background="#FFDEDEDE" Margin="0, 0, 5, 0">
-                <Image Source="twitter-bird-light-bgs.png" Width="32" Height="32" x:Name="logo" />
+                <Image Source="../Resources/twitter-bird-light-bgs.png" Width="32" Height="32" x:Name="logo" />
             </Border>
             
             <TextBox x:Name="TxtSearch" Grid.Column="1" FontSize="14" Text="Twitter" />

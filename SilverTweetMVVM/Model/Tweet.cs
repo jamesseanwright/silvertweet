@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SilverTweetMVVM
+namespace SilverTweetMVVM.Model
 {
     public class Tweet
     {

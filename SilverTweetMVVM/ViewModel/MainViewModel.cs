@@ -19,10 +19,12 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
 using System.ComponentModel;
+using SilverTweetMVVM.DataService;
+using SilverTweetMVVM.Model;
 
-namespace SilverTweetMVVM
+namespace SilverTweetMVVM.ViewModel
 {
-    public class MainPageViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
         private bool _loading;
         public bool Loading
@@ -35,7 +37,7 @@ namespace SilverTweetMVVM
             }
         }
 
-        TwitterAPI api = new TwitterAPI();
+        TwitterDataService api = new TwitterDataService();
 
         public RelayCommand<string> GetTweetsCommand { get; set; }
         public RelayCommand SendAnimationCommand { get; set; }
@@ -51,7 +53,7 @@ namespace SilverTweetMVVM
             }
         }
 
-        public MainPageViewModel()
+        public MainViewModel()
         {
             _tweets = new ObservableCollection<Tweet>();
             GetTweetsCommand = new RelayCommand<string>(GetTweets);
