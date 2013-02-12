@@ -61,7 +61,6 @@ namespace SilverTweetMVVM.ViewModel
 
         public async void GetTweets(string query)
         {
-            Messenger.Default.Send("begin");
             Loading = true;
 
             try
@@ -78,7 +77,6 @@ namespace SilverTweetMVVM.ViewModel
             }
 
             Loading = false;
-            Messenger.Default.Send("stop");
         }
     }
 }

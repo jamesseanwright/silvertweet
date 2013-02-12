@@ -8,7 +8,8 @@
     xmlns:im="clr-namespace:Microsoft.Expression.Interactivity.Media;assembly=Microsoft.Expression.Interactions"
     xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
     mc:Ignorable="d" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
-    xmlns:conv="clr-namespace:SilverTweetMVVM.Converters">
+    xmlns:conv="clr-namespace:SilverTweetMVVM.Converters"
+    xmlns:behav="clr-namespace:SilverTweetMVVM.Behaviours">
     
     <UserControl.Resources>
         <conv:BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter" />
@@ -23,6 +24,13 @@
     </UserControl.Resources>
     
     <Grid Background="#FF5C7590" ShowGridLines="True">
+        
+        <i:Interaction.Triggers>
+            <ic:PropertyChangedTrigger Binding="{Binding Loading}">
+                <behav:ImageAnimationTrigger TargetName="animStoryboard" />
+            </ic:PropertyChangedTrigger>
+        </i:Interaction.Triggers>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
             <RowDefinition Height="*" />
@@ -40,12 +48,14 @@
             </Border>
             
             <TextBox x:Name="TxtSearch" Grid.Column="1" FontSize="14" Text="Twitter" />
-            
+
             <Button x:Name="BtnSearch" Grid.Column="2" Content="Search" Command="{Binding GetTweetsCommand}" 
-                    CommandParameter="{Binding Text, ElementName=TxtSearch}" IsEnabled="{Binding Loading, Converter={StaticResource booleanInverter}}" />
+                    CommandParameter="{Binding Text, ElementName=TxtSearch}"
+                    IsEnabled="{Binding Loading, Converter={StaticResource booleanInverter}}" />
         </Grid>
 
-        <ListBox Name="TweetList" Grid.Row="1" Margin="5" ItemsSource="{Binding Tweets}" IsEnabled="{Binding Loading, Converter={StaticResource booleanInverter}}">
+        <ListBox Name="TweetList" Grid.Row="1" Margin="5" ItemsSource="{Binding Tweets}"
+                 IsEnabled="{Binding Loading, Converter={StaticResource booleanInverter}}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Width="Auto">
@@ -58,10 +68,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <i:Interaction.Triggers>
-            <i:EventTrigger EventName="Loaded">
+    </Grid>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
                 <cmd:EventToCommand Command="{Binding GetTweetsCommand}" CommandParameter="Twitter" />
             </i:EventTrigger>
-        </i:Interaction.Triggers>
-    </Grid>
+    </i:Interaction.Triggers>
 </UserControl>

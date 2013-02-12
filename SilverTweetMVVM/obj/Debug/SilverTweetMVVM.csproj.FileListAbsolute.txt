@@ -15,15 +15,6 @@ C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVV
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\Microsoft.Expression.Interactions.xml
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\System.Json.xml
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\System.Runtime.Serialization.Json.xml
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\de\System.Json.resources.dll
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\es\System.Json.resources.dll
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\Bin\Debug\fr\System.Json.resources.dll
@@ -48,4 +39,4 @@ C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVV
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\SilverTweetMVVM.dll
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\SilverTweetMVVM.pdb
 C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\XapCacheFile.xml
-C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\ViewModel\MainView.g.i.cs
+C:\Users\Administrator.WIN7\Documents\Visual Studio 2010\Projects\SilverTweetMVVM\SilverTweetMVVM\obj\Debug\View\MainView.g.i.cs

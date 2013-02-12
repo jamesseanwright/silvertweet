@@ -26,19 +26,6 @@ namespace SilverTweetMVVM
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            Messenger.Default.Register<string>(this, (animation) => onReceiveMessage(animation));
-        }
-
-        private void onReceiveMessage(string message)
-        {
-            if (message.Equals("begin"))
-            {
-                animStoryboard.Begin();
-            }
-            else
-            {
-                animStoryboard.Stop();
-            }
         }
     }
 }
