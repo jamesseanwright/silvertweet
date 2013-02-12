@@ -4,7 +4,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-           
     xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.SL4"
     xmlns:im="clr-namespace:Microsoft.Expression.Interactivity.Media;assembly=Microsoft.Expression.Interactions"
     xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
@@ -18,7 +17,7 @@
         <Storyboard x:Name="animStoryboard">
             <DoubleAnimation From="1.0" To="0.0" 
                              Duration="0:0:0.25" AutoReverse="True" RepeatBehavior="Forever"
-                             Storyboard.TargetName="logo" Storyboard.TargetProperty="Opacity">
+                             Storyboard.TargetName="ImgLogo" Storyboard.TargetProperty="Opacity">
             </DoubleAnimation>
         </Storyboard>
     </UserControl.Resources>
@@ -37,7 +36,7 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" CornerRadius="10" Background="#FFDEDEDE" Margin="0, 0, 5, 0">
-                <Image Source="../Resources/twitter-bird-light-bgs.png" Width="32" Height="32" x:Name="logo" />
+                <Image Source="../Resources/twitter-bird-light-bgs.png" Width="32" Height="32" x:Name="ImgLogo" />
             </Border>
             
             <TextBox x:Name="TxtSearch" Grid.Column="1" FontSize="14" Text="Twitter" />
@@ -58,11 +57,11 @@
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="Loaded">
-                    <cmd:EventToCommand Command="{Binding GetTweetsCommand}" CommandParameter="Twitter" />
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </ListBox>
+        <i:Interaction.Triggers>
+            <i:EventTrigger EventName="Loaded">
+                <cmd:EventToCommand Command="{Binding GetTweetsCommand}" CommandParameter="Twitter" />
+            </i:EventTrigger>
+        </i:Interaction.Triggers>
     </Grid>
 </UserControl>

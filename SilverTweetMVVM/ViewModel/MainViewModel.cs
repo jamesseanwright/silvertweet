@@ -63,10 +63,22 @@ namespace SilverTweetMVVM.ViewModel
         {
             Messenger.Default.Send("begin");
             Loading = true;
-            Tweets = await api.Search(query);
+
+            try
+            {
+                Tweets = await api.Search(query);
+            }
+            catch (WebException ex)
+            {
+                Tweet tweet = new Tweet();
+                tweet.User = ex.Message;
+                tweet.Text = ex.InnerException.ToString();
+                tweet.ProfileImage = "../Resources/error.png";
+                Tweets.Add(tweet);
+            }
+
             Loading = false;
             Messenger.Default.Send("stop");
-
         }
     }
 }

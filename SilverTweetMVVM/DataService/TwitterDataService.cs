@@ -24,7 +24,7 @@ namespace SilverTweetMVVM.DataService
     {
         public async Task<ObservableCollection<Tweet>> Search(string query)
         {
-            string twitterUrl = String.Format("http://search.twitter.com/search.json?q={0}", query);
+            string twitterUrl = String.Format("http://search.twitter.com/sech.json?q={0}", query);
             WebClient twitterService = new WebClient();
             string data = await twitterService.DownloadStringTaskAsync(new Uri(twitterUrl));
 

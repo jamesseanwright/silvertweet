@@ -1,4 +1,11 @@
 ﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SilverTweetMVVM" EntryPointType="SilverTweetMVVM.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.InBrowserSettings>
+    <InBrowserSettings>
+      <InBrowserSettings.SecuritySettings>
+        <SecuritySettings ElevatedPermissions="Required" />
+      </InBrowserSettings.SecuritySettings>
+    </InBrowserSettings>
+  </Deployment.InBrowserSettings>
   <Deployment.OutOfBrowserSettings>
     <OutOfBrowserSettings ShortName="SilverTweet" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
       <OutOfBrowserSettings.Blurb>MVVM Silverlight Twitter Client.</OutOfBrowserSettings.Blurb>
